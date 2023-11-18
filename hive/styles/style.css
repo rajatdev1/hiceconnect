@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Poppins&display=swap');
+@import url('./fonts.css');
+
+
+/* Css for scroll bar */
+div ::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+div ::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+} 
+div ::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+div ::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+/* Css for scroll bar */
+
+/* common css for all project */
+h3.h3{
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.border-bottom{
+  border-bottom: 1px solid #000000 !important;
+}
+.border-top-none{
+  border-top: 0 !important;
+}
+.border-right-none{
+  border-right: 0 !important;
+}
+.border-inline-none{
+  border-inline: 0 !important;
+}
+.border-left-none{
+  border-left: 0 !important;
+}
+table thead th, table thead th div, table tbody td.MuiTableCell-root, table tbody td div{
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+}
+table thead th, table thead th div{
+  font-weight: 600;
+}
+div.cust-accordion {
+  background-color: transparent;
+  box-shadow: unset;
+  color: #000000;
+}
+div.cust-accordion .cust-accordion-summary.Mui-expanded{
+  min-height: auto;
+}
+div.cust-accordion .css-o4b71y-MuiAccordionSummary-content.Mui-expanded{
+  margin: 12px 0;
+}
+div.cust-accordion .cust-accordion-details{
+  padding: 15px 0;
+}
+table.cust-table{
+  border-collapse: separate !important;
+  border-spacing: 0 !important;
+}
+table.cust-table thead tr th:first-child, table.cust-table tbody tr td:first-child {
+  border-left: 1px solid #acacac;
+}
+table.cust-table thead tr th {
+  background-color: #f1f1f1;
+  border-right: 1px solid #acacac;
+  border-top: 1px solid #acacac;
+  border-bottom: 1px solid #acacac;
+  white-space: nowrap;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  padding: 10px;
+}
+table.cust-table tbody tr td {
+  background-color: #ffffff;
+  border-right: 1px solid #acacac;
+  border-bottom: 1px solid #acacac;
+  white-space: nowrap;
+  font-family: 'kyn', sans-serif;
+  padding: 5px 10px;
+  font-weight: 400;
+  font-size: 18px;
+}
+/* for sticky column */
+.stickyColTable thead th:first-child, .stickyColTable tbody td:first-child{
+  position: sticky;
+  left: 0;
+  z-index: 3;
+}
+.stickyColTable thead th:nth-child(2), .stickyColTable tbody td:nth-child(2),
+.stickyColTable thead th:nth-child(3), .stickyColTable tbody td:nth-child(3),
+.stickyColTable thead th:nth-child(4), .stickyColTable tbody td:nth-child(4){
+  position: sticky;
+  z-index: 2;
+}
+/* css for filter table */
+.filter-table table .MuiCollapse-wrapperInner.MuiCollapse-vertical .MuiSvgIcon-root.MuiSvgIcon-fontSizeMedium{
+  font-size: 20px;
+}
+.filter-table table thead th{
+  border-top: 1px solid #e0e0e0;
+  background-color: rgba(246, 246, 246, 1);
+}
+.filter-table table thead th:first-child{
+  border-left: 1px solid #e0e0e0;
+}
+.filter-table table thead th:last-child{  
+  border-right: 1px solid #e0e0e0;
+}
+.filter-table table thead th .css-l4u8b9-MuiInputBase-root-MuiInput-root:before{
+  border-bottom: 0 !important;
+}
+.filter-table table thead th div.MuiCollapse-entered{
+  border: 1px solid #000000;
+  padding: 0 7px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  margin-top: 8px;
+}
+/* common css for all project */
+/* css for header */
+header #my-account{
+  background-color: #ffffff;
+  height:  38px;
+  padding: 4px, 14px, 4px, 4px;
+  border-radius: 26px;
+  gap: 14px;
+  color: #000000;
+  text-transform: capitalize;
+  font-family: 'kyn', sans-serif;
+}
+header #my-account .user-name-box {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 5px 2px;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  font-size: 12px;
+}
+.sidebar .menu-icon{
+  width: 44px;
+  height: 44px;
+  border-radius: 5px;
+  gap: 4px;
+  background-color: #efefef;
+  display: flex;
+  align-items: center;
+  color: #9747FF;
+}
+.sidebar .css-12i7wg6-MuiPaper-root-MuiDrawer-paper{
+  border-right: 0;
+  box-shadow: 1px 0px 3px 0px #0000001A;
+}
+.sidebar div ul li div.MuiListItemButton-root:hover{
+  background-color: transparent;
+}
+/* css for header end */
+.main-content{
+  padding: 0px 30px;
+  /* margin-top: 70px; */
+  background-color: #efefef;
+  height: 100vh !important;
+  /* min-height: calc(100vh - 70px); */
+}
+.box-view{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14.5px;
+}
+.box-view .box {
+  max-width: 150px;
+  width: 100%;
+  padding: 23px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+.box-view .box.active{
+  border: 2px solid #9747FF;
+}
+.box-view .box:hover{
+  border: 2px solid #9747FF;
+}
+.box-view .box-icon{
+  font-size: 30px;
+}
+.box-view p{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: center;
+  margin: 7px 0 11px 0;
+}
+#active-projects thead th:first-child, #active-projects tbody td:first-child{
+  width: 345px;
+}
+#active-projects thead th:nth-child(2), #active-projects tbody td:nth-child(2){
+  left: 344PX;
+  z-index: 3;
+}
+.all-project-table .css-80pr5n-MuiPaper-root{
+  padding-top: 15px;
+  margin-top: 30px;
+  border-radius: 15px;
+  box-shadow: unset;
+}
+.all-project-table tr td:first-child{
+  border-left: 1px solid rgba(224, 224, 224, 1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* css for header */
+@media (min-width: 600px){
+  .header .toolbar.css-hyum1k-MuiToolbar-root {
+      min-height: 70px;
+  }
+}
+
+/* styles.scss */
+
+.AppBar {
+  background-color: blueviolet !important;
+}
